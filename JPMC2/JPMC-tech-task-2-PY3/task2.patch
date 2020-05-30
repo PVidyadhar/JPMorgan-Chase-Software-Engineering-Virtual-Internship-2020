@@ -1,0 +1,2405 @@
+From 3b7ace8f41da4f2e6ba4d805bc40fd0ada33d76f Mon Sep 17 00:00:00 2001
+From: Vidyadhar Pogul <pogul.vidyadhar@gmail.com>
+Date: Tue, 12 May 2020 02:09:07 +0530
+Subject: [PATCH] Create Patch File
+
+---
+ .bin/acorn                    | 15 +++++++++++++++
+ .bin/acorn.cmd                |  7 +++++++
+ .bin/ansi-html                | 15 +++++++++++++++
+ .bin/ansi-html.cmd            |  7 +++++++
+ .bin/atob                     | 15 +++++++++++++++
+ .bin/atob.cmd                 |  7 +++++++
+ .bin/autoprefixer             | 15 +++++++++++++++
+ .bin/autoprefixer.cmd         |  7 +++++++
+ .bin/babylon                  | 15 +++++++++++++++
+ .bin/babylon.cmd              |  7 +++++++
+ .bin/browserslist             | 15 +++++++++++++++
+ .bin/browserslist.cmd         |  7 +++++++
+ .bin/cleancss                 | 15 +++++++++++++++
+ .bin/cleancss.cmd             |  7 +++++++
+ .bin/cssesc                   | 15 +++++++++++++++
+ .bin/cssesc.cmd               |  7 +++++++
+ .bin/detect                   | 15 +++++++++++++++
+ .bin/detect-libc              | 15 +++++++++++++++
+ .bin/detect-libc.cmd          |  7 +++++++
+ .bin/detect-port              | 15 +++++++++++++++
+ .bin/detect-port.cmd          |  7 +++++++
+ .bin/detect.cmd               |  7 +++++++
+ .bin/errno                    | 15 +++++++++++++++
+ .bin/errno.cmd                |  7 +++++++
+ .bin/escodegen                | 15 +++++++++++++++
+ .bin/escodegen.cmd            |  7 +++++++
+ .bin/esgenerate               | 15 +++++++++++++++
+ .bin/esgenerate.cmd           |  7 +++++++
+ .bin/eslint                   | 15 +++++++++++++++
+ .bin/eslint.cmd               |  7 +++++++
+ .bin/esparse                  | 15 +++++++++++++++
+ .bin/esparse.cmd              |  7 +++++++
+ .bin/esvalidate               | 15 +++++++++++++++
+ .bin/esvalidate.cmd           |  7 +++++++
+ .bin/extract-zip              | 15 +++++++++++++++
+ .bin/extract-zip.cmd          |  7 +++++++
+ .bin/handlebars               | 15 +++++++++++++++
+ .bin/handlebars.cmd           |  7 +++++++
+ .bin/he                       | 15 +++++++++++++++
+ .bin/he.cmd                   |  7 +++++++
+ .bin/html-minifier            | 15 +++++++++++++++
+ .bin/html-minifier.cmd        |  7 +++++++
+ .bin/image-size               | 15 +++++++++++++++
+ .bin/image-size.cmd           |  7 +++++++
+ .bin/import-local-fixture     | 15 +++++++++++++++
+ .bin/import-local-fixture.cmd |  7 +++++++
+ .bin/is-ci                    | 15 +++++++++++++++
+ .bin/is-ci.cmd                |  7 +++++++
+ .bin/jest                     | 15 +++++++++++++++
+ .bin/jest-runtime             | 15 +++++++++++++++
+ .bin/jest-runtime.cmd         |  7 +++++++
+ .bin/jest.cmd                 |  7 +++++++
+ .bin/js-yaml                  | 15 +++++++++++++++
+ .bin/js-yaml.cmd              |  7 +++++++
+ .bin/jsesc                    | 15 +++++++++++++++
+ .bin/jsesc.cmd                |  7 +++++++
+ .bin/json5                    | 15 +++++++++++++++
+ .bin/json5.cmd                |  7 +++++++
+ .bin/lessc                    | 15 +++++++++++++++
+ .bin/lessc.cmd                |  7 +++++++
+ .bin/loose-envify             | 15 +++++++++++++++
+ .bin/loose-envify.cmd         |  7 +++++++
+ .bin/miller-rabin             | 15 +++++++++++++++
+ .bin/miller-rabin.cmd         |  7 +++++++
+ .bin/mime                     | 15 +++++++++++++++
+ .bin/mime.cmd                 |  7 +++++++
+ .bin/mkdirp                   | 15 +++++++++++++++
+ .bin/mkdirp.cmd               |  7 +++++++
+ .bin/multicast-dns            | 15 +++++++++++++++
+ .bin/multicast-dns.cmd        |  7 +++++++
+ .bin/parser                   | 15 +++++++++++++++
+ .bin/parser.cmd               |  7 +++++++
+ .bin/prebuild-install         | 15 +++++++++++++++
+ .bin/prebuild-install.cmd     |  7 +++++++
+ .bin/prettier                 | 15 +++++++++++++++
+ .bin/prettier.cmd             |  7 +++++++
+ .bin/rc                       | 15 +++++++++++++++
+ .bin/rc.cmd                   |  7 +++++++
+ .bin/react-scripts            | 15 +++++++++++++++
+ .bin/react-scripts.cmd        |  7 +++++++
+ .bin/regexp-tree              | 15 +++++++++++++++
+ .bin/regexp-tree.cmd          |  7 +++++++
+ .bin/regjsparser              | 15 +++++++++++++++
+ .bin/regjsparser.cmd          |  7 +++++++
+ .bin/rimraf                   | 15 +++++++++++++++
+ .bin/rimraf.cmd               |  7 +++++++
+ .bin/sane                     | 15 +++++++++++++++
+ .bin/sane.cmd                 |  7 +++++++
+ .bin/semver                   | 15 +++++++++++++++
+ .bin/semver.cmd               |  7 +++++++
+ .bin/sha.js                   | 15 +++++++++++++++
+ .bin/sha.js.cmd               |  7 +++++++
+ .bin/sshpk-conv               | 15 +++++++++++++++
+ .bin/sshpk-conv.cmd           |  7 +++++++
+ .bin/sshpk-sign               | 15 +++++++++++++++
+ .bin/sshpk-sign.cmd           |  7 +++++++
+ .bin/sshpk-verify             | 15 +++++++++++++++
+ .bin/sshpk-verify.cmd         |  7 +++++++
+ .bin/svgo                     | 15 +++++++++++++++
+ .bin/svgo.cmd                 |  7 +++++++
+ .bin/terser                   | 15 +++++++++++++++
+ .bin/terser.cmd               |  7 +++++++
+ .bin/tsc                      | 15 +++++++++++++++
+ .bin/tsc.cmd                  |  7 +++++++
+ .bin/tsserver                 | 15 +++++++++++++++
+ .bin/tsserver.cmd             |  7 +++++++
+ .bin/uglifyjs                 | 15 +++++++++++++++
+ .bin/uglifyjs.cmd             |  7 +++++++
+ .bin/uuid                     | 15 +++++++++++++++
+ .bin/uuid.cmd                 |  7 +++++++
+ .bin/watch                    | 15 +++++++++++++++
+ .bin/watch.cmd                |  7 +++++++
+ .bin/webpack                  | 15 +++++++++++++++
+ .bin/webpack-dev-server       | 15 +++++++++++++++
+ .bin/webpack-dev-server.cmd   |  7 +++++++
+ .bin/webpack.cmd              |  7 +++++++
+ .bin/which                    | 15 +++++++++++++++
+ .bin/which.cmd                |  7 +++++++
+ src/App.tsx                   | 16 +++++++++++++++-
+ src/Graph.tsx                 | 14 ++++++++++++--
+ 120 files changed, 1325 insertions(+), 3 deletions(-)
+ create mode 100644 .bin/acorn
+ create mode 100644 .bin/acorn.cmd
+ create mode 100644 .bin/ansi-html
+ create mode 100644 .bin/ansi-html.cmd
+ create mode 100644 .bin/atob
+ create mode 100644 .bin/atob.cmd
+ create mode 100644 .bin/autoprefixer
+ create mode 100644 .bin/autoprefixer.cmd
+ create mode 100644 .bin/babylon
+ create mode 100644 .bin/babylon.cmd
+ create mode 100644 .bin/browserslist
+ create mode 100644 .bin/browserslist.cmd
+ create mode 100644 .bin/cleancss
+ create mode 100644 .bin/cleancss.cmd
+ create mode 100644 .bin/cssesc
+ create mode 100644 .bin/cssesc.cmd
+ create mode 100644 .bin/detect
+ create mode 100644 .bin/detect-libc
+ create mode 100644 .bin/detect-libc.cmd
+ create mode 100644 .bin/detect-port
+ create mode 100644 .bin/detect-port.cmd
+ create mode 100644 .bin/detect.cmd
+ create mode 100644 .bin/errno
+ create mode 100644 .bin/errno.cmd
+ create mode 100644 .bin/escodegen
+ create mode 100644 .bin/escodegen.cmd
+ create mode 100644 .bin/esgenerate
+ create mode 100644 .bin/esgenerate.cmd
+ create mode 100644 .bin/eslint
+ create mode 100644 .bin/eslint.cmd
+ create mode 100644 .bin/esparse
+ create mode 100644 .bin/esparse.cmd
+ create mode 100644 .bin/esvalidate
+ create mode 100644 .bin/esvalidate.cmd
+ create mode 100644 .bin/extract-zip
+ create mode 100644 .bin/extract-zip.cmd
+ create mode 100644 .bin/handlebars
+ create mode 100644 .bin/handlebars.cmd
+ create mode 100644 .bin/he
+ create mode 100644 .bin/he.cmd
+ create mode 100644 .bin/html-minifier
+ create mode 100644 .bin/html-minifier.cmd
+ create mode 100644 .bin/image-size
+ create mode 100644 .bin/image-size.cmd
+ create mode 100644 .bin/import-local-fixture
+ create mode 100644 .bin/import-local-fixture.cmd
+ create mode 100644 .bin/is-ci
+ create mode 100644 .bin/is-ci.cmd
+ create mode 100644 .bin/jest
+ create mode 100644 .bin/jest-runtime
+ create mode 100644 .bin/jest-runtime.cmd
+ create mode 100644 .bin/jest.cmd
+ create mode 100644 .bin/js-yaml
+ create mode 100644 .bin/js-yaml.cmd
+ create mode 100644 .bin/jsesc
+ create mode 100644 .bin/jsesc.cmd
+ create mode 100644 .bin/json5
+ create mode 100644 .bin/json5.cmd
+ create mode 100644 .bin/lessc
+ create mode 100644 .bin/lessc.cmd
+ create mode 100644 .bin/loose-envify
+ create mode 100644 .bin/loose-envify.cmd
+ create mode 100644 .bin/miller-rabin
+ create mode 100644 .bin/miller-rabin.cmd
+ create mode 100644 .bin/mime
+ create mode 100644 .bin/mime.cmd
+ create mode 100644 .bin/mkdirp
+ create mode 100644 .bin/mkdirp.cmd
+ create mode 100644 .bin/multicast-dns
+ create mode 100644 .bin/multicast-dns.cmd
+ create mode 100644 .bin/parser
+ create mode 100644 .bin/parser.cmd
+ create mode 100644 .bin/prebuild-install
+ create mode 100644 .bin/prebuild-install.cmd
+ create mode 100644 .bin/prettier
+ create mode 100644 .bin/prettier.cmd
+ create mode 100644 .bin/rc
+ create mode 100644 .bin/rc.cmd
+ create mode 100644 .bin/react-scripts
+ create mode 100644 .bin/react-scripts.cmd
+ create mode 100644 .bin/regexp-tree
+ create mode 100644 .bin/regexp-tree.cmd
+ create mode 100644 .bin/regjsparser
+ create mode 100644 .bin/regjsparser.cmd
+ create mode 100644 .bin/rimraf
+ create mode 100644 .bin/rimraf.cmd
+ create mode 100644 .bin/sane
+ create mode 100644 .bin/sane.cmd
+ create mode 100644 .bin/semver
+ create mode 100644 .bin/semver.cmd
+ create mode 100644 .bin/sha.js
+ create mode 100644 .bin/sha.js.cmd
+ create mode 100644 .bin/sshpk-conv
+ create mode 100644 .bin/sshpk-conv.cmd
+ create mode 100644 .bin/sshpk-sign
+ create mode 100644 .bin/sshpk-sign.cmd
+ create mode 100644 .bin/sshpk-verify
+ create mode 100644 .bin/sshpk-verify.cmd
+ create mode 100644 .bin/svgo
+ create mode 100644 .bin/svgo.cmd
+ create mode 100644 .bin/terser
+ create mode 100644 .bin/terser.cmd
+ create mode 100644 .bin/tsc
+ create mode 100644 .bin/tsc.cmd
+ create mode 100644 .bin/tsserver
+ create mode 100644 .bin/tsserver.cmd
+ create mode 100644 .bin/uglifyjs
+ create mode 100644 .bin/uglifyjs.cmd
+ create mode 100644 .bin/uuid
+ create mode 100644 .bin/uuid.cmd
+ create mode 100644 .bin/watch
+ create mode 100644 .bin/watch.cmd
+ create mode 100644 .bin/webpack
+ create mode 100644 .bin/webpack-dev-server
+ create mode 100644 .bin/webpack-dev-server.cmd
+ create mode 100644 .bin/webpack.cmd
+ create mode 100644 .bin/which
+ create mode 100644 .bin/which.cmd
+
+diff --git a/.bin/acorn b/.bin/acorn
+new file mode 100644
+index 0000000..558ebb9
+--- /dev/null
++++ b/.bin/acorn
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../acorn/bin/acorn" "$@"
++  ret=$?
++else 
++  node  "$basedir/../acorn/bin/acorn" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/acorn.cmd b/.bin/acorn.cmd
+new file mode 100644
+index 0000000..45c0c3d
+--- /dev/null
++++ b/.bin/acorn.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\acorn\bin\acorn" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\acorn\bin\acorn" %*
++)
+\ No newline at end of file
+diff --git a/.bin/ansi-html b/.bin/ansi-html
+new file mode 100644
+index 0000000..3dbfb3e
+--- /dev/null
++++ b/.bin/ansi-html
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../ansi-html/bin/ansi-html" "$@"
++  ret=$?
++else 
++  node  "$basedir/../ansi-html/bin/ansi-html" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/ansi-html.cmd b/.bin/ansi-html.cmd
+new file mode 100644
+index 0000000..5cc8a18
+--- /dev/null
++++ b/.bin/ansi-html.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\ansi-html\bin\ansi-html" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\ansi-html\bin\ansi-html" %*
++)
+\ No newline at end of file
+diff --git a/.bin/atob b/.bin/atob
+new file mode 100644
+index 0000000..5089679
+--- /dev/null
++++ b/.bin/atob
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../atob/bin/atob.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../atob/bin/atob.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/atob.cmd b/.bin/atob.cmd
+new file mode 100644
+index 0000000..34edc9a
+--- /dev/null
++++ b/.bin/atob.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\atob\bin\atob.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\atob\bin\atob.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/autoprefixer b/.bin/autoprefixer
+new file mode 100644
+index 0000000..3d8838c
+--- /dev/null
++++ b/.bin/autoprefixer
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../autoprefixer/bin/autoprefixer" "$@"
++  ret=$?
++else 
++  node  "$basedir/../autoprefixer/bin/autoprefixer" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/autoprefixer.cmd b/.bin/autoprefixer.cmd
+new file mode 100644
+index 0000000..75bb406
+--- /dev/null
++++ b/.bin/autoprefixer.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\autoprefixer\bin\autoprefixer" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\autoprefixer\bin\autoprefixer" %*
++)
+\ No newline at end of file
+diff --git a/.bin/babylon b/.bin/babylon
+new file mode 100644
+index 0000000..4177aa9
+--- /dev/null
++++ b/.bin/babylon
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../babylon/bin/babylon.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../babylon/bin/babylon.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/babylon.cmd b/.bin/babylon.cmd
+new file mode 100644
+index 0000000..2aeb639
+--- /dev/null
++++ b/.bin/babylon.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\babylon\bin\babylon.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\babylon\bin\babylon.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/browserslist b/.bin/browserslist
+new file mode 100644
+index 0000000..1df3f2a
+--- /dev/null
++++ b/.bin/browserslist
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../browserslist/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../browserslist/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/browserslist.cmd b/.bin/browserslist.cmd
+new file mode 100644
+index 0000000..e4006d7
+--- /dev/null
++++ b/.bin/browserslist.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\browserslist\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\browserslist\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/cleancss b/.bin/cleancss
+new file mode 100644
+index 0000000..32fcb6e
+--- /dev/null
++++ b/.bin/cleancss
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../clean-css-cli/bin/cleancss" "$@"
++  ret=$?
++else 
++  node  "$basedir/../clean-css-cli/bin/cleancss" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/cleancss.cmd b/.bin/cleancss.cmd
+new file mode 100644
+index 0000000..fec7114
+--- /dev/null
++++ b/.bin/cleancss.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\clean-css-cli\bin\cleancss" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\clean-css-cli\bin\cleancss" %*
++)
+\ No newline at end of file
+diff --git a/.bin/cssesc b/.bin/cssesc
+new file mode 100644
+index 0000000..d26a79a
+--- /dev/null
++++ b/.bin/cssesc
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../cssesc/bin/cssesc" "$@"
++  ret=$?
++else 
++  node  "$basedir/../cssesc/bin/cssesc" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/cssesc.cmd b/.bin/cssesc.cmd
+new file mode 100644
+index 0000000..fe4c1ce
+--- /dev/null
++++ b/.bin/cssesc.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\cssesc\bin\cssesc" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\cssesc\bin\cssesc" %*
++)
+\ No newline at end of file
+diff --git a/.bin/detect b/.bin/detect
+new file mode 100644
+index 0000000..8c5e783
+--- /dev/null
++++ b/.bin/detect
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../detect-port-alt/bin/detect-port" "$@"
++  ret=$?
++else 
++  node  "$basedir/../detect-port-alt/bin/detect-port" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/detect-libc b/.bin/detect-libc
+new file mode 100644
+index 0000000..9d8c2a1
+--- /dev/null
++++ b/.bin/detect-libc
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../detect-libc/bin/detect-libc.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../detect-libc/bin/detect-libc.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/detect-libc.cmd b/.bin/detect-libc.cmd
+new file mode 100644
+index 0000000..b05ed83
+--- /dev/null
++++ b/.bin/detect-libc.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\detect-libc\bin\detect-libc.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\detect-libc\bin\detect-libc.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/detect-port b/.bin/detect-port
+new file mode 100644
+index 0000000..8c5e783
+--- /dev/null
++++ b/.bin/detect-port
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../detect-port-alt/bin/detect-port" "$@"
++  ret=$?
++else 
++  node  "$basedir/../detect-port-alt/bin/detect-port" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/detect-port.cmd b/.bin/detect-port.cmd
+new file mode 100644
+index 0000000..be0cf0b
+--- /dev/null
++++ b/.bin/detect-port.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\detect-port-alt\bin\detect-port" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\detect-port-alt\bin\detect-port" %*
++)
+\ No newline at end of file
+diff --git a/.bin/detect.cmd b/.bin/detect.cmd
+new file mode 100644
+index 0000000..be0cf0b
+--- /dev/null
++++ b/.bin/detect.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\detect-port-alt\bin\detect-port" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\detect-port-alt\bin\detect-port" %*
++)
+\ No newline at end of file
+diff --git a/.bin/errno b/.bin/errno
+new file mode 100644
+index 0000000..9532c97
+--- /dev/null
++++ b/.bin/errno
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../errno/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../errno/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/errno.cmd b/.bin/errno.cmd
+new file mode 100644
+index 0000000..3b337b4
+--- /dev/null
++++ b/.bin/errno.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\errno\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\errno\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/escodegen b/.bin/escodegen
+new file mode 100644
+index 0000000..4e46a48
+--- /dev/null
++++ b/.bin/escodegen
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../escodegen/bin/escodegen.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../escodegen/bin/escodegen.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/escodegen.cmd b/.bin/escodegen.cmd
+new file mode 100644
+index 0000000..8ffe393
+--- /dev/null
++++ b/.bin/escodegen.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\escodegen\bin\escodegen.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\escodegen\bin\escodegen.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/esgenerate b/.bin/esgenerate
+new file mode 100644
+index 0000000..5d097c3
+--- /dev/null
++++ b/.bin/esgenerate
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../escodegen/bin/esgenerate.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../escodegen/bin/esgenerate.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/esgenerate.cmd b/.bin/esgenerate.cmd
+new file mode 100644
+index 0000000..39593ad
+--- /dev/null
++++ b/.bin/esgenerate.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\escodegen\bin\esgenerate.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\escodegen\bin\esgenerate.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/eslint b/.bin/eslint
+new file mode 100644
+index 0000000..9f3ac31
+--- /dev/null
++++ b/.bin/eslint
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../eslint/bin/eslint.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../eslint/bin/eslint.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/eslint.cmd b/.bin/eslint.cmd
+new file mode 100644
+index 0000000..009a9ae
+--- /dev/null
++++ b/.bin/eslint.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\eslint\bin\eslint.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\eslint\bin\eslint.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/esparse b/.bin/esparse
+new file mode 100644
+index 0000000..2525527
+--- /dev/null
++++ b/.bin/esparse
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../esprima/bin/esparse.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../esprima/bin/esparse.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/esparse.cmd b/.bin/esparse.cmd
+new file mode 100644
+index 0000000..064f58e
+--- /dev/null
++++ b/.bin/esparse.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\esprima\bin\esparse.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\esprima\bin\esparse.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/esvalidate b/.bin/esvalidate
+new file mode 100644
+index 0000000..2137cd5
+--- /dev/null
++++ b/.bin/esvalidate
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../esprima/bin/esvalidate.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../esprima/bin/esvalidate.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/esvalidate.cmd b/.bin/esvalidate.cmd
+new file mode 100644
+index 0000000..8dfaec0
+--- /dev/null
++++ b/.bin/esvalidate.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\esprima\bin\esvalidate.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\esprima\bin\esvalidate.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/extract-zip b/.bin/extract-zip
+new file mode 100644
+index 0000000..401e914
+--- /dev/null
++++ b/.bin/extract-zip
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../extract-zip/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../extract-zip/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/extract-zip.cmd b/.bin/extract-zip.cmd
+new file mode 100644
+index 0000000..87bf4a1
+--- /dev/null
++++ b/.bin/extract-zip.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\extract-zip\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\extract-zip\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/handlebars b/.bin/handlebars
+new file mode 100644
+index 0000000..a7dd050
+--- /dev/null
++++ b/.bin/handlebars
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../handlebars/bin/handlebars" "$@"
++  ret=$?
++else 
++  node  "$basedir/../handlebars/bin/handlebars" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/handlebars.cmd b/.bin/handlebars.cmd
+new file mode 100644
+index 0000000..0738f3e
+--- /dev/null
++++ b/.bin/handlebars.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\handlebars\bin\handlebars" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\handlebars\bin\handlebars" %*
++)
+\ No newline at end of file
+diff --git a/.bin/he b/.bin/he
+new file mode 100644
+index 0000000..e3e6a0a
+--- /dev/null
++++ b/.bin/he
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../he/bin/he" "$@"
++  ret=$?
++else 
++  node  "$basedir/../he/bin/he" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/he.cmd b/.bin/he.cmd
+new file mode 100644
+index 0000000..1630c8e
+--- /dev/null
++++ b/.bin/he.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\he\bin\he" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\he\bin\he" %*
++)
+\ No newline at end of file
+diff --git a/.bin/html-minifier b/.bin/html-minifier
+new file mode 100644
+index 0000000..e7e46d4
+--- /dev/null
++++ b/.bin/html-minifier
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../html-minifier/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../html-minifier/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/html-minifier.cmd b/.bin/html-minifier.cmd
+new file mode 100644
+index 0000000..491b26b
+--- /dev/null
++++ b/.bin/html-minifier.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\html-minifier\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\html-minifier\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/image-size b/.bin/image-size
+new file mode 100644
+index 0000000..0380071
+--- /dev/null
++++ b/.bin/image-size
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../image-size/bin/image-size.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../image-size/bin/image-size.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/image-size.cmd b/.bin/image-size.cmd
+new file mode 100644
+index 0000000..d81c582
+--- /dev/null
++++ b/.bin/image-size.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\image-size\bin\image-size.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\image-size\bin\image-size.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/import-local-fixture b/.bin/import-local-fixture
+new file mode 100644
+index 0000000..ceb37d3
+--- /dev/null
++++ b/.bin/import-local-fixture
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../import-local/fixtures/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../import-local/fixtures/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/import-local-fixture.cmd b/.bin/import-local-fixture.cmd
+new file mode 100644
+index 0000000..c3f354b
+--- /dev/null
++++ b/.bin/import-local-fixture.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\import-local\fixtures\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\import-local\fixtures\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/is-ci b/.bin/is-ci
+new file mode 100644
+index 0000000..bc5605a
+--- /dev/null
++++ b/.bin/is-ci
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../is-ci/bin.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../is-ci/bin.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/is-ci.cmd b/.bin/is-ci.cmd
+new file mode 100644
+index 0000000..a68da49
+--- /dev/null
++++ b/.bin/is-ci.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\is-ci\bin.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\is-ci\bin.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/jest b/.bin/jest
+new file mode 100644
+index 0000000..fefabc5
+--- /dev/null
++++ b/.bin/jest
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../jest/bin/jest.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../jest/bin/jest.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/jest-runtime b/.bin/jest-runtime
+new file mode 100644
+index 0000000..aced78d
+--- /dev/null
++++ b/.bin/jest-runtime
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../jest-runtime/bin/jest-runtime.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../jest-runtime/bin/jest-runtime.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/jest-runtime.cmd b/.bin/jest-runtime.cmd
+new file mode 100644
+index 0000000..a15fbbb
+--- /dev/null
++++ b/.bin/jest-runtime.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\jest-runtime\bin\jest-runtime.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\jest-runtime\bin\jest-runtime.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/jest.cmd b/.bin/jest.cmd
+new file mode 100644
+index 0000000..09fbc34
+--- /dev/null
++++ b/.bin/jest.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\jest\bin\jest.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\jest\bin\jest.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/js-yaml b/.bin/js-yaml
+new file mode 100644
+index 0000000..460d9df
+--- /dev/null
++++ b/.bin/js-yaml
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../js-yaml/bin/js-yaml.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../js-yaml/bin/js-yaml.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/js-yaml.cmd b/.bin/js-yaml.cmd
+new file mode 100644
+index 0000000..ae8e7bc
+--- /dev/null
++++ b/.bin/js-yaml.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\js-yaml\bin\js-yaml.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\js-yaml\bin\js-yaml.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/jsesc b/.bin/jsesc
+new file mode 100644
+index 0000000..e59ea43
+--- /dev/null
++++ b/.bin/jsesc
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../jsesc/bin/jsesc" "$@"
++  ret=$?
++else 
++  node  "$basedir/../jsesc/bin/jsesc" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/jsesc.cmd b/.bin/jsesc.cmd
+new file mode 100644
+index 0000000..66206ea
+--- /dev/null
++++ b/.bin/jsesc.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\jsesc\bin\jsesc" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\jsesc\bin\jsesc" %*
++)
+\ No newline at end of file
+diff --git a/.bin/json5 b/.bin/json5
+new file mode 100644
+index 0000000..71e29db
+--- /dev/null
++++ b/.bin/json5
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../json5/lib/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../json5/lib/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/json5.cmd b/.bin/json5.cmd
+new file mode 100644
+index 0000000..4ef655f
+--- /dev/null
++++ b/.bin/json5.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\json5\lib\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\json5\lib\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/lessc b/.bin/lessc
+new file mode 100644
+index 0000000..a20538f
+--- /dev/null
++++ b/.bin/lessc
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../less/bin/lessc" "$@"
++  ret=$?
++else 
++  node  "$basedir/../less/bin/lessc" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/lessc.cmd b/.bin/lessc.cmd
+new file mode 100644
+index 0000000..3a58879
+--- /dev/null
++++ b/.bin/lessc.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\less\bin\lessc" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\less\bin\lessc" %*
++)
+\ No newline at end of file
+diff --git a/.bin/loose-envify b/.bin/loose-envify
+new file mode 100644
+index 0000000..0939216
+--- /dev/null
++++ b/.bin/loose-envify
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../loose-envify/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../loose-envify/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/loose-envify.cmd b/.bin/loose-envify.cmd
+new file mode 100644
+index 0000000..6238bbb
+--- /dev/null
++++ b/.bin/loose-envify.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\loose-envify\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\loose-envify\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/miller-rabin b/.bin/miller-rabin
+new file mode 100644
+index 0000000..1fd4071
+--- /dev/null
++++ b/.bin/miller-rabin
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../miller-rabin/bin/miller-rabin" "$@"
++  ret=$?
++else 
++  node  "$basedir/../miller-rabin/bin/miller-rabin" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/miller-rabin.cmd b/.bin/miller-rabin.cmd
+new file mode 100644
+index 0000000..de8d55c
+--- /dev/null
++++ b/.bin/miller-rabin.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\miller-rabin\bin\miller-rabin" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\miller-rabin\bin\miller-rabin" %*
++)
+\ No newline at end of file
+diff --git a/.bin/mime b/.bin/mime
+new file mode 100644
+index 0000000..0dbddf0
+--- /dev/null
++++ b/.bin/mime
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../mime/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../mime/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/mime.cmd b/.bin/mime.cmd
+new file mode 100644
+index 0000000..8169562
+--- /dev/null
++++ b/.bin/mime.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\mime\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\mime\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/mkdirp b/.bin/mkdirp
+new file mode 100644
+index 0000000..4b00467
+--- /dev/null
++++ b/.bin/mkdirp
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../mkdirp/bin/cmd.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../mkdirp/bin/cmd.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/mkdirp.cmd b/.bin/mkdirp.cmd
+new file mode 100644
+index 0000000..0d2cdd7
+--- /dev/null
++++ b/.bin/mkdirp.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\mkdirp\bin\cmd.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\mkdirp\bin\cmd.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/multicast-dns b/.bin/multicast-dns
+new file mode 100644
+index 0000000..dbf4eeb
+--- /dev/null
++++ b/.bin/multicast-dns
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../multicast-dns/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../multicast-dns/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/multicast-dns.cmd b/.bin/multicast-dns.cmd
+new file mode 100644
+index 0000000..898e81f
+--- /dev/null
++++ b/.bin/multicast-dns.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\multicast-dns\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\multicast-dns\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/parser b/.bin/parser
+new file mode 100644
+index 0000000..5925785
+--- /dev/null
++++ b/.bin/parser
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../@babel/parser/bin/babel-parser.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../@babel/parser/bin/babel-parser.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/parser.cmd b/.bin/parser.cmd
+new file mode 100644
+index 0000000..bbadb81
+--- /dev/null
++++ b/.bin/parser.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\@babel\parser\bin\babel-parser.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\@babel\parser\bin\babel-parser.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/prebuild-install b/.bin/prebuild-install
+new file mode 100644
+index 0000000..ade136c
+--- /dev/null
++++ b/.bin/prebuild-install
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../prebuild-install/bin.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../prebuild-install/bin.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/prebuild-install.cmd b/.bin/prebuild-install.cmd
+new file mode 100644
+index 0000000..011eb9a
+--- /dev/null
++++ b/.bin/prebuild-install.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\prebuild-install\bin.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\prebuild-install\bin.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/prettier b/.bin/prettier
+new file mode 100644
+index 0000000..4c8ec82
+--- /dev/null
++++ b/.bin/prettier
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../prettier/bin-prettier.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../prettier/bin-prettier.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/prettier.cmd b/.bin/prettier.cmd
+new file mode 100644
+index 0000000..a6e910c
+--- /dev/null
++++ b/.bin/prettier.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\prettier\bin-prettier.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\prettier\bin-prettier.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/rc b/.bin/rc
+new file mode 100644
+index 0000000..eb55931
+--- /dev/null
++++ b/.bin/rc
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../rc/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../rc/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/rc.cmd b/.bin/rc.cmd
+new file mode 100644
+index 0000000..b1c891e
+--- /dev/null
++++ b/.bin/rc.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\rc\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\rc\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/react-scripts b/.bin/react-scripts
+new file mode 100644
+index 0000000..e52bdfc
+--- /dev/null
++++ b/.bin/react-scripts
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../react-scripts/bin/react-scripts.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../react-scripts/bin/react-scripts.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/react-scripts.cmd b/.bin/react-scripts.cmd
+new file mode 100644
+index 0000000..47ba144
+--- /dev/null
++++ b/.bin/react-scripts.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\react-scripts\bin\react-scripts.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\react-scripts\bin\react-scripts.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/regexp-tree b/.bin/regexp-tree
+new file mode 100644
+index 0000000..ede9b05
+--- /dev/null
++++ b/.bin/regexp-tree
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../regexp-tree/bin/regexp-tree" "$@"
++  ret=$?
++else 
++  node  "$basedir/../regexp-tree/bin/regexp-tree" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/regexp-tree.cmd b/.bin/regexp-tree.cmd
+new file mode 100644
+index 0000000..b6f981a
+--- /dev/null
++++ b/.bin/regexp-tree.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\regexp-tree\bin\regexp-tree" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\regexp-tree\bin\regexp-tree" %*
++)
+\ No newline at end of file
+diff --git a/.bin/regjsparser b/.bin/regjsparser
+new file mode 100644
+index 0000000..a0add0f
+--- /dev/null
++++ b/.bin/regjsparser
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../regjsparser/bin/parser" "$@"
++  ret=$?
++else 
++  node  "$basedir/../regjsparser/bin/parser" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/regjsparser.cmd b/.bin/regjsparser.cmd
+new file mode 100644
+index 0000000..bd9432d
+--- /dev/null
++++ b/.bin/regjsparser.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\regjsparser\bin\parser" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\regjsparser\bin\parser" %*
++)
+\ No newline at end of file
+diff --git a/.bin/rimraf b/.bin/rimraf
+new file mode 100644
+index 0000000..3cebd6e
+--- /dev/null
++++ b/.bin/rimraf
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../rimraf/bin.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../rimraf/bin.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/rimraf.cmd b/.bin/rimraf.cmd
+new file mode 100644
+index 0000000..9333ec6
+--- /dev/null
++++ b/.bin/rimraf.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\rimraf\bin.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\rimraf\bin.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/sane b/.bin/sane
+new file mode 100644
+index 0000000..08433d1
+--- /dev/null
++++ b/.bin/sane
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../sane/src/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../sane/src/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/sane.cmd b/.bin/sane.cmd
+new file mode 100644
+index 0000000..5cdb931
+--- /dev/null
++++ b/.bin/sane.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\sane\src\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\sane\src\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/semver b/.bin/semver
+new file mode 100644
+index 0000000..d592e69
+--- /dev/null
++++ b/.bin/semver
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../semver/bin/semver" "$@"
++  ret=$?
++else 
++  node  "$basedir/../semver/bin/semver" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/semver.cmd b/.bin/semver.cmd
+new file mode 100644
+index 0000000..37c00a4
+--- /dev/null
++++ b/.bin/semver.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\semver\bin\semver" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\semver\bin\semver" %*
++)
+\ No newline at end of file
+diff --git a/.bin/sha.js b/.bin/sha.js
+new file mode 100644
+index 0000000..5b09194
+--- /dev/null
++++ b/.bin/sha.js
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../sha.js/bin.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../sha.js/bin.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/sha.js.cmd b/.bin/sha.js.cmd
+new file mode 100644
+index 0000000..e089a20
+--- /dev/null
++++ b/.bin/sha.js.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\sha.js\bin.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\sha.js\bin.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/sshpk-conv b/.bin/sshpk-conv
+new file mode 100644
+index 0000000..c9c2987
+--- /dev/null
++++ b/.bin/sshpk-conv
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../sshpk/bin/sshpk-conv" "$@"
++  ret=$?
++else 
++  node  "$basedir/../sshpk/bin/sshpk-conv" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/sshpk-conv.cmd b/.bin/sshpk-conv.cmd
+new file mode 100644
+index 0000000..dde70b0
+--- /dev/null
++++ b/.bin/sshpk-conv.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\sshpk\bin\sshpk-conv" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\sshpk\bin\sshpk-conv" %*
++)
+\ No newline at end of file
+diff --git a/.bin/sshpk-sign b/.bin/sshpk-sign
+new file mode 100644
+index 0000000..1a92124
+--- /dev/null
++++ b/.bin/sshpk-sign
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../sshpk/bin/sshpk-sign" "$@"
++  ret=$?
++else 
++  node  "$basedir/../sshpk/bin/sshpk-sign" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/sshpk-sign.cmd b/.bin/sshpk-sign.cmd
+new file mode 100644
+index 0000000..45025ec
+--- /dev/null
++++ b/.bin/sshpk-sign.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\sshpk\bin\sshpk-sign" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\sshpk\bin\sshpk-sign" %*
++)
+\ No newline at end of file
+diff --git a/.bin/sshpk-verify b/.bin/sshpk-verify
+new file mode 100644
+index 0000000..597a66b
+--- /dev/null
++++ b/.bin/sshpk-verify
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../sshpk/bin/sshpk-verify" "$@"
++  ret=$?
++else 
++  node  "$basedir/../sshpk/bin/sshpk-verify" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/sshpk-verify.cmd b/.bin/sshpk-verify.cmd
+new file mode 100644
+index 0000000..1b5fc0c
+--- /dev/null
++++ b/.bin/sshpk-verify.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\sshpk\bin\sshpk-verify" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\sshpk\bin\sshpk-verify" %*
++)
+\ No newline at end of file
+diff --git a/.bin/svgo b/.bin/svgo
+new file mode 100644
+index 0000000..88aa620
+--- /dev/null
++++ b/.bin/svgo
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../svgo/bin/svgo" "$@"
++  ret=$?
++else 
++  node  "$basedir/../svgo/bin/svgo" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/svgo.cmd b/.bin/svgo.cmd
+new file mode 100644
+index 0000000..925d669
+--- /dev/null
++++ b/.bin/svgo.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\svgo\bin\svgo" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\svgo\bin\svgo" %*
++)
+\ No newline at end of file
+diff --git a/.bin/terser b/.bin/terser
+new file mode 100644
+index 0000000..a910452
+--- /dev/null
++++ b/.bin/terser
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../terser/bin/uglifyjs" "$@"
++  ret=$?
++else 
++  node  "$basedir/../terser/bin/uglifyjs" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/terser.cmd b/.bin/terser.cmd
+new file mode 100644
+index 0000000..31a4723
+--- /dev/null
++++ b/.bin/terser.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\terser\bin\uglifyjs" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\terser\bin\uglifyjs" %*
++)
+\ No newline at end of file
+diff --git a/.bin/tsc b/.bin/tsc
+new file mode 100644
+index 0000000..17d005e
+--- /dev/null
++++ b/.bin/tsc
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../typescript/bin/tsc" "$@"
++  ret=$?
++else 
++  node  "$basedir/../typescript/bin/tsc" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/tsc.cmd b/.bin/tsc.cmd
+new file mode 100644
+index 0000000..c1b2381
+--- /dev/null
++++ b/.bin/tsc.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\typescript\bin\tsc" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\typescript\bin\tsc" %*
++)
+\ No newline at end of file
+diff --git a/.bin/tsserver b/.bin/tsserver
+new file mode 100644
+index 0000000..df1d4d1
+--- /dev/null
++++ b/.bin/tsserver
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../typescript/bin/tsserver" "$@"
++  ret=$?
++else 
++  node  "$basedir/../typescript/bin/tsserver" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/tsserver.cmd b/.bin/tsserver.cmd
+new file mode 100644
+index 0000000..822603d
+--- /dev/null
++++ b/.bin/tsserver.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\typescript\bin\tsserver" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\typescript\bin\tsserver" %*
++)
+\ No newline at end of file
+diff --git a/.bin/uglifyjs b/.bin/uglifyjs
+new file mode 100644
+index 0000000..de7b74f
+--- /dev/null
++++ b/.bin/uglifyjs
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../uglify-js/bin/uglifyjs" "$@"
++  ret=$?
++else 
++  node  "$basedir/../uglify-js/bin/uglifyjs" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/uglifyjs.cmd b/.bin/uglifyjs.cmd
+new file mode 100644
+index 0000000..3306013
+--- /dev/null
++++ b/.bin/uglifyjs.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\uglify-js\bin\uglifyjs" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\uglify-js\bin\uglifyjs" %*
++)
+\ No newline at end of file
+diff --git a/.bin/uuid b/.bin/uuid
+new file mode 100644
+index 0000000..f3bfcf4
+--- /dev/null
++++ b/.bin/uuid
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../uuid/bin/uuid" "$@"
++  ret=$?
++else 
++  node  "$basedir/../uuid/bin/uuid" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/uuid.cmd b/.bin/uuid.cmd
+new file mode 100644
+index 0000000..da52d68
+--- /dev/null
++++ b/.bin/uuid.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\uuid\bin\uuid" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\uuid\bin\uuid" %*
++)
+\ No newline at end of file
+diff --git a/.bin/watch b/.bin/watch
+new file mode 100644
+index 0000000..905382d
+--- /dev/null
++++ b/.bin/watch
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../watch/cli.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../watch/cli.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/watch.cmd b/.bin/watch.cmd
+new file mode 100644
+index 0000000..7e32e52
+--- /dev/null
++++ b/.bin/watch.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\watch\cli.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\watch\cli.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/webpack b/.bin/webpack
+new file mode 100644
+index 0000000..eb57292
+--- /dev/null
++++ b/.bin/webpack
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../webpack/bin/webpack.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../webpack/bin/webpack.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/webpack-dev-server b/.bin/webpack-dev-server
+new file mode 100644
+index 0000000..a6f749f
+--- /dev/null
++++ b/.bin/webpack-dev-server
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../webpack-dev-server/bin/webpack-dev-server.js" "$@"
++  ret=$?
++else 
++  node  "$basedir/../webpack-dev-server/bin/webpack-dev-server.js" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/webpack-dev-server.cmd b/.bin/webpack-dev-server.cmd
+new file mode 100644
+index 0000000..7ed6c4e
+--- /dev/null
++++ b/.bin/webpack-dev-server.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\webpack-dev-server\bin\webpack-dev-server.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\webpack-dev-server\bin\webpack-dev-server.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/webpack.cmd b/.bin/webpack.cmd
+new file mode 100644
+index 0000000..73e75d3
+--- /dev/null
++++ b/.bin/webpack.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\webpack\bin\webpack.js" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\webpack\bin\webpack.js" %*
++)
+\ No newline at end of file
+diff --git a/.bin/which b/.bin/which
+new file mode 100644
+index 0000000..cbe872c
+--- /dev/null
++++ b/.bin/which
+@@ -0,0 +1,15 @@
++#!/bin/sh
++basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")
++
++case `uname` in
++    *CYGWIN*) basedir=`cygpath -w "$basedir"`;;
++esac
++
++if [ -x "$basedir/node" ]; then
++  "$basedir/node"  "$basedir/../which/bin/which" "$@"
++  ret=$?
++else 
++  node  "$basedir/../which/bin/which" "$@"
++  ret=$?
++fi
++exit $ret
+diff --git a/.bin/which.cmd b/.bin/which.cmd
+new file mode 100644
+index 0000000..588f44d
+--- /dev/null
++++ b/.bin/which.cmd
+@@ -0,0 +1,7 @@
++@IF EXIST "%~dp0\node.exe" (
++  "%~dp0\node.exe"  "%~dp0\..\which\bin\which" %*
++) ELSE (
++  @SETLOCAL
++  @SET PATHEXT=%PATHEXT:;.JS;=;%
++  node  "%~dp0\..\which\bin\which" %*
++)
+\ No newline at end of file
+diff --git a/src/App.tsx b/src/App.tsx
+index 0728518..b7de540 100755
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -8,6 +8,7 @@ import './App.css';
+  */
+ interface IState {
+   data: ServerRespond[],
++  showGraph: boolean,
+ }
+ 
+ /**
+@@ -22,6 +23,7 @@ class App extends Component<{}, IState> {
+       // data saves the server responds.
+       // We use this state to parse data down to the child element (Graph) as element property
+       data: [],
++      showGraph:false,
+     };
+   }
+ 
+@@ -29,18 +31,30 @@ class App extends Component<{}, IState> {
+    * Render Graph react component with state.data parse as property data
+    */
+   renderGraph() {
++  if(this.state.showGraph){
+     return (<Graph data={this.state.data}/>)
+   }
++  }
+ 
+   /**
+    * Get new data from server and update the state with the new data
+    */
+   getDataFromServer() {
++    let x = 0;
++    const interval = setInterval(() => {
+     DataStreamer.getData((serverResponds: ServerRespond[]) => {
+       // Update the state by creating a new array of data that consists of
+       // Previous data in the state and the new data from server
+-      this.setState({ data: [...this.state.data, ...serverResponds] });
++      this.setState(
++      { data:serverResponds,
++        showGraph: true,
++       });
+     });
++    x++;
++    if (x > 1000) {
++     clearInterval(interval);
++    }
++    },100);
+   }
+ 
+   /**
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index ec1430e..1bf0379 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -14,7 +14,7 @@ interface IProps {
+  * Perspective library adds load to HTMLElement prototype.
+  * This interface acts as a wrapper for Typescript compiler.
+  */
+-interface PerspectiveViewerElement {
++interface PerspectiveViewerElement extends HTMLElement {
+   load: (table: Table) => void,
+ }
+ 
+@@ -32,7 +32,7 @@ class Graph extends Component<IProps, {}> {
+ 
+   componentDidMount() {
+     // Get element to attach the table from the DOM.
+-    const elem: PerspectiveViewerElement = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
++    const elem = document.getElementsByTagName('perspective-viewer')[0] as unknown as PerspectiveViewerElement;
+ 
+     const schema = {
+       stock: 'string',
+@@ -49,6 +49,16 @@ class Graph extends Component<IProps, {}> {
+ 
+       // Add more Perspective configurations here.
+       elem.load(this.table);
++      elem.setAttribute('view','y_line');
++      elem.setAttribute('column-pivots','["stock"]');
++      elem.setAttribute('row-pivots','["timestamp"]');
++      elem.setAttribute('columns','["top_ask_price"]');
++      elem.setAttribute('aggregates',`
++      {"stock":"distinct count",
++       "top_ask_price":"avg",
++       "top_bid_price":"avg",
++       "timestamp":"distinct count"
++      }`);
+     }
+   }
+ 
+-- 
+2.25.0.windows.1
+
